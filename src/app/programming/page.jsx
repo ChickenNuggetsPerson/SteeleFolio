@@ -22,14 +22,12 @@ const Page = () => {
     if (search == null) {
         search = 0;
     }
-    //let index = props.location.hash.replace('#', '');
+
     return (
         <div>
             <br></br>
 
-            <SelectedItem
-                index={search}
-            />
+            <SelectedItem index={search} />
 
         </div>
     );

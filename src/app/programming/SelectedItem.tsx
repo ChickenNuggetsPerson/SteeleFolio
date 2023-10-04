@@ -25,13 +25,13 @@ export default function index({ index }: { index: number }) {
 
       <br></br>
 
-      <div className='md:flex gap-5' style={tileStyle}>
+      <div className='md:flex gap-5 sm:w-auto w-screen' style={tileStyle}>
 
         <div className=''>
           <SideList/>
         </div>
         
-        <div className='' style={contentSyle}>
+        <div className='w-screen sm:w-auto items-center flex' style={contentSyle}>
           <DisplayItem id={index}/>
         </div>
 

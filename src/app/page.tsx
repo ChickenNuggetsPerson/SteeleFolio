@@ -14,7 +14,6 @@ const buttonPadding = {
   maxWidth: "500px",
   minWidth: "10px",
 
-
   backgroundColor: "rgb(44, 53, 66)",
   borderRadius: '10px',
   padding: "20px"  
@@ -45,10 +44,8 @@ function buttonClass(color : string) : string {
 export default function index() {
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
-      <div 
-        className='flex flex-col items-center'
-        style={tileStyle}
-      >
+      
+      <div className='flex flex-col items-center w-max' style={tileStyle}>
         <text className="font-extrabold text-2xl">
           Hayden Steele
         </text>

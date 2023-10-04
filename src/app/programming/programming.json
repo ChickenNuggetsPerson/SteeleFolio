@@ -1,11 +1,9 @@
 [
     {
         "title": "Sudoku Solver",
-        "image": "/Sudoku.gif",
-        "desc": "Recursive Sudoku Solver:\n\nBeing recursive, this solver recursively solves a sudoku board (inputed through a .csv file) meaning that it can backup when it makes a mistake."
+        "file": "sudoku.md"
     },{
-        "title": "Bob Solver",
-        "image": "/test.png",
-        "desc": "asdfasdfk;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nasdfasdf\n\n\naseffsda"
+        "title": "Burt V2",
+        "file": "BurtV2.md"
     }
 ]

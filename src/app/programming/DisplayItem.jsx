@@ -1,41 +1,27 @@
-// pages/item/[id].js
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import data from './programming.json';
 
-const scrollStyle = {
-    overflowY: "scroll",
-    backgroundColor: "rgb(37, 46, 59)",
-    padding: "10px",
-    width: "60vw"
-}
-const imageStyle = {
-    //maxWidth: "800px",
-    maxHeight: "50vh",
-}
-const textStyle = {
-    width: "100%"
-}
 
 const Item = ({ id }) => {    
     const item = data[id];
 
+    const [result, setResult] = useState(null);
+    const resultRef = useRef(result);
+
+    useEffect(() => {
+        async function fetchData() {
+            const response = await fetch('/api/renderMd?fileName=' + item.file);
+            const jsonData = await response.json();
+            resultRef.current = jsonData.content;
+            setResult(jsonData)
+        }
+    
+        fetchData();
+    }, []);
+
     return (
-        <div style={scrollStyle} className='h-screen rounded'>
-            <text className='font-extrabold text-2xl'>{item.title}</text>
-            <img src={item.image} alt={item.title} style={imageStyle} />
-            <br></br>
-            <div className='' style={textStyle}>{item.desc}</div>
-        </div>
+        <div dangerouslySetInnerHTML={{ __html: resultRef.current }} />
     );
 };
 
 export default Item;
-
-export async function getServerSideProps({ params }) {
-    const id = params.id;
-    return {
-        props: {
-        id
-        }
-    };
-}

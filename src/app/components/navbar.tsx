@@ -6,7 +6,7 @@ import Image from 'next/image'
 const haydenStyle = {
     borderRadius: '10%',
     border: '1px solid #fff',
-    //position: 'absolute'
+    position: 'absolute'
 }
 const headerStyle = {
     //maxWidth: "50%",
@@ -46,7 +46,11 @@ const NavBar = () => {
                     alt={''}
                     width={90}
                     height={100}
-                    style={haydenStyle}
+                    style={{
+                        borderRadius: '10%',
+                        border: '1px solid #fff',
+                        position: 'absolute'
+                    }}
                 />
             </Link>
             <div className="flex flex-col items-center ">

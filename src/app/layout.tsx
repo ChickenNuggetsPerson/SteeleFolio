@@ -8,7 +8,12 @@ import DefaultLayout from './defaultLayout';
 const LayoutWrapper = ({ children } : any) => {
 
   const pathname = usePathname();
-  if (pathname == "/") {
+
+  if (pathname == null) {
+    return <DefaultLayout>{children}</DefaultLayout>;
+  }
+
+  if (pathname == "/" || pathname.startsWith("/api")) {
     return <HomeLayout>{children}</HomeLayout>;
   }
   return <DefaultLayout>{children}</DefaultLayout>;
