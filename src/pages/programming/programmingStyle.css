@@ -1,0 +1,18 @@
+
+h1 {
+    font-size: xx-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+h2 {
+    font-size: x-large;
+}
+h3 {
+    font-size: larger;
+}
+
+code {
+    background-color: rgb(31, 31, 31);
+    padding: 2px;
+    border-radius: 5%;
+}
+

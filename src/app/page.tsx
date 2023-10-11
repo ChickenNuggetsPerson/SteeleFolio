@@ -1,23 +1,14 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import Spline from '@splinetool/react-spline';
 
 const haydenStyle = {
-  borderRadius: '50%',
-  border: '1px solid #fff',
+  height: "70vh",
+  width: "70vw"
 }
-const tileStyle = {
-  backgroundColor: "rgb(44, 53, 66)",
-  borderRadius: '10px',
-  padding: "20px"
-}
-const buttonPadding = {
-  maxWidth: "500px",
-  minWidth: "10px",
 
-  backgroundColor: "rgb(44, 53, 66)",
-  borderRadius: '10px',
-  padding: "20px"  
-}
 const buttonStyle = {
   width: "150px"
 }
@@ -43,31 +34,30 @@ function buttonClass(color : string) : string {
 
 export default function index() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-24">
-      
-      <div className='flex flex-col items-center w-max' style={tileStyle}>
-        <text className="font-extrabold text-2xl">
-          Hayden Steele
-        </text>
-        <br></br>
-        <Image
-          src="/Hayden.png" 
-          alt={''}
-          width={200}
-          height={200}
-          style={haydenStyle}
-        />
-        <br></br>
-        <text className="font-bold font-mono">
-          2024 SHS Senior 
-        </text>
-      </div>
+    <main className="flex min-h-screen flex-col items-center p-4">
 
-      <br></br>
+      <div className='w-100vw h-40vh md:h-90vh' style={{
+        //userSelect: "none"
+      }}>
+        <Spline scene="/home.splinecode" />
+      </div>
+      
       <br></br>
     
     
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5" style={buttonPadding}>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5" style={{
+        
+          maxWidth: "500px",
+          minWidth: "10px",
+        
+          backgroundColor: "rgb(44, 53, 66)",
+          borderRadius: '10px',
+          padding: "20px",
+        
+          bottom: "2vh",
+          position: "absolute"
+        
+      }}>
         <Link href="/programming">
           <button className={buttonClass("green")} style={buttonStyle}> Programming </button>
         </Link>
@@ -78,7 +68,6 @@ export default function index() {
           <button className={buttonClass("purple")} style={buttonStyle}> Digital Art </button>
         </Link>
       </div>
-
       
     </main>
   )
