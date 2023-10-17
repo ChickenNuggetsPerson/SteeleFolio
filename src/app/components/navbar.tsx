@@ -61,7 +61,7 @@ const NavBar = () => {
                     <Link href="/photography">
                         <button className={buttonClass("blue")} style={buttonStyle}> Photography </button>
                     </Link>
-                    <Link href="/digitalart">
+                    <Link href="/digitalArt">
                         <button className={buttonClass("purple")} style={buttonStyle}> Digital Art </button>
                     </Link>
                 </div>
