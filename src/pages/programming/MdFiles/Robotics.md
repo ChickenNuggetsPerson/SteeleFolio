@@ -1,3 +1,7 @@
+# The programming section is still a work in progress
+
+‎
+
 # Robotics
 
 Throughout the 2022-2023 and 2023-2024 school years, I have developed the code for the 84075A robotics team at Syracuse High School.  
