@@ -3,9 +3,10 @@
 
 ![](/images/programming/Sudoku.gif)
 
-This Sudoku solver recursively solves Sudoku boards. This means that it if it makes a mistake, it can backup and try other options. 
+‎
 
-This is my super cool documentation that is rendered to html for the webpage
+[[ Code on Github ]](https://github.com/ChickenNuggetsPerson/Java_SudokuSolver)
 
-## Sub header
-### Sub Sub Header
+‎
+
+This Sudoku solver recursively solves Sudoku boards. This means that it if it makes a mistake, it can backup and try other options. The program can also create sudoku boards of a desired difficulty from a range of 1 - 10.

@@ -33,9 +33,7 @@ async function generateImagesArray() {
         const { width, height } = await sharp(imageBuffer).metadata();
 
         let scaleFactor = 100;
-
-        console.log(files[i])
-        
+                
         images.push({
             src: `/images/digitalArt/${files[i]}`,
             original: `/images/digitalArt/${files[i]}`,
