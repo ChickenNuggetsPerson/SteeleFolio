@@ -4,7 +4,7 @@ const nextConfig = {
         return [
             {
                 source: '/programming',
-                destination: '/programming/BurtV2',
+                destination: '/programming/Robotics',
                 permanent: true,
             },
         ]

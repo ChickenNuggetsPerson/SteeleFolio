@@ -33,7 +33,7 @@ const scrollStyle = {
     overflow: "auto",
     backgroundColor: "rgb(37, 46, 59)",
     padding: "10px",
-    minHeight: "200px"
+    minHeight: "300px"
 }
 
 
