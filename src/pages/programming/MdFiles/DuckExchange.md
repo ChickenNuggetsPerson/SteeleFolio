@@ -1,6 +1,6 @@
 # Duck Exchange Website
 
-![Auton Image](/images/programming/DuckExchange.mov)
+![DuckExchange Image](/images/programming/DuckExchange.mov)
 
 ‎
 

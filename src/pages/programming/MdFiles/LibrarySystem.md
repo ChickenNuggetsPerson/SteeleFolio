@@ -1,6 +1,6 @@
 # Library System
 
-![Auton Image](/images/programming/LibrarySystem.mov)
+![LibrarySystem Image](/images/programming/LibrarySystem.mov)
 
 ‎
 

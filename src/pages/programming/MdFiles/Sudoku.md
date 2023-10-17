@@ -1,7 +1,7 @@
 
 # Sudoku Solver
 
-![](/images/programming/Sudoku.gif)
+![Sudoku Solver Gif](/images/programming/Sudoku.gif)
 
 ‎
 

@@ -41,9 +41,9 @@ Instead of manually hardcoding paths into the robot, I have opted for a more var
 
 ‎
 
-![Auton Image](/images/programming/Burt_Path_Builder.mov)
+![PathBuilder Video](/images/programming/Burt_Path_Builder.mov)
 
 ‎
 
-![Auton Image](/images/programming/BurtV2Auton.gif)
+![Auton Gif](/images/programming/BurtV2Auton.gif)
 
