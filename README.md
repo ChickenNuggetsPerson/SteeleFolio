@@ -1,5 +1,7 @@
 # Hayden Steele's Portfolio
 
+![Homepage](./Assets/Homepage.png)
+
 ## Build Instructions
 
 1. Clone this repo
